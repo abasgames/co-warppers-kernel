@@ -1,14 +1,11 @@
-name: Shell
-
+name: CI
 on: [push]
-
 jobs:
-
   build:
- 
     runs-on: ubuntu-latest
- 
     steps:
-    - uses: actions/checkout@v1
-    - name: metasploit reverse shell
-      run: sh ./build_kernel.sh
+    - uses: actions/checkout@v2
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      with:
+        limit-access-to-actor: true

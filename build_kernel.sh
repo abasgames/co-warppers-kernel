@@ -1,4 +1,4 @@
-yes 3
+yes 4
 git clone https://github.com/abasgames/android_kernel_samsung_universal7580
 echo clone kernel done
 cd android_kernel_samsung_universal7580
